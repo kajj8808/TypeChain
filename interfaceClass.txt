@@ -1,0 +1,20 @@
+/* type script 에서만 작동. */
+interface Human {
+    name: string;
+    age: number;
+    gender: string;
+}
+
+class Human{
+    public name: string;
+    public age: number;
+    public gender: string;
+    /* constructor is method 클래스 가 시작할때마다 실행됨*/
+    constructor(name: string, age: number, gender: string){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+}
+
+const kang = new Human("kang" , 22 , "man");
